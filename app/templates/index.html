@@ -15,15 +15,18 @@
 {% block content %}
 
 <div class="container">
+
+        <h3> Popular Movies</h3>
     <form>
-        <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control">
-        <input type="submit"  value="Submit" class="btn btn-default">
+        <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control"><br>
+        <input type="submit"  value="Submit" class="btn btn-success">
     </form>
 
 </div>
+<br>
 
-<!-- Popular movie -->
-<h3> Popular Movies</h3>
+
+
 <ul>
     {{ macro.displayMovieList(popular)}}
 </ul>
